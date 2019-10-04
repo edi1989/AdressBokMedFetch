@@ -19,6 +19,6 @@ function printlist(listaPaPersonal) {
     for (i = 0; i < listaPaPersonal.length; i++) {
         //console.log(empData[i].firstname)
         var empList = document.getElementById("listemployee")
-        empList.insertAdjacentHTML("beforeend", "<li class='empItem'>" + listaPaPersonal[i].firstname + " " + listaPaPersonal[i].lastname + "<br>" + listaPaPersonal[i].email + "</li>")
+        empList.insertAdjacentHTML("beforeend", "<li class='empItem'>" + listaPaPersonal[i].firstname + " " + listaPaPersonal[i].lastname + "<br>" + listaPaPersonal[i].email + "<br>" + "Age: " + listaPaPersonal[i].age + "</li>")
     }
 }
